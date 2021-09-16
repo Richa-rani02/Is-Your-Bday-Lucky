@@ -18,7 +18,7 @@
         <label for="birth-date">Enter your birthdate :</label>
         <input id="birth-date" type="date"></input>
         <label for="lucky-number">Enter your lucky number :</label>
-        <input id="lucky-number" type="number"></input>
+        <input id="lucky-number" type="number" min="0" oninput="validity.valid||(value='');"></input>
         <button id="check-btn">CHECK</button>
         <div id="result"></div>
         <img id="happyimg" src="/images/baloon1.gif">
